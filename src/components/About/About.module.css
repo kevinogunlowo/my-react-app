@@ -1,0 +1,158 @@
+/* Importing variables and shared styles from the vars.css file */
+@import "../../vars.css";
+
+/* Styling for the container element that wraps the entire About section */
+.container {
+  position: relative; /* Element is positioned relative to its normal position */
+  background-color: rgba(12, 12, 12, 0.6); /* Semi-transparent dark background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 73px; /* Inner spacing around the content */
+  margin-top: 129px; /* Space at the top of the container */
+  z-index: 1; /* Ensures the container is layered above other elements */
+  margin-left: 10%; /* Left margin to create spacing from the viewport edge */
+  margin-right: 10%; /* Right margin to match the left margin */
+}
+
+/* Styling for the title element (h2) in the About section */
+.title {
+  color: var(--color-text); /* Text color using a variable from vars.css */
+  font-size: 35px; /* Font size of the title */
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: 1.75px; /* Spacing between letters */
+  text-transform: uppercase; /* Makes all letters uppercase */
+  text-align: center; /* Centers the title horizontally */
+}
+
+/* Styling for the content container holding the image and about items */
+.content {
+  display: flex; /* Flexbox layout for easy positioning */
+  flex-direction: row; /* Arranges child elements in a horizontal row */
+  align-items: center; /* Vertically centers the content */
+  justify-content: space-between; /* Adds space between the child elements */
+}
+
+/* Styling for the image element inside the About section */
+.aboutImage {
+  width: 35%; /* Image takes up 35% of the container width */
+}
+
+/* Styling for the list of about items (ul element) */
+.aboutItems {
+  color: var(--color-text); /* Text color for the list, using a CSS variable */
+  display: flex; /* Flexbox layout for the list */
+  flex-direction: column; /* Arranges items vertically in a column */
+  gap: 50px; /* Space between each list item */
+}
+
+/* Styling for individual about items (li element) */
+.aboutItem {
+  display: flex; /* Flexbox layout for horizontal alignment */
+  flex-direction: row; /* Arranges the content in a row */
+  align-items: center; /* Vertically aligns items in the center */
+  border-radius: 20px; /* Rounds the corners of the list item */
+  list-style: none; /* Removes the default list bullet */
+  padding: 25px; /* Inner spacing around the content */
+  
+  /* Gradient background that transitions from blue to transparent */
+  background-image: linear-gradient(
+    90deg, /* 90-degree gradient */
+    rgba(165, 215, 232, 0.42) 0%, /* Light blue at the start */
+    rgba(255, 255, 255, 0) 100% /* Transparent at the end */
+  );
+  background-size: 0 100%; /* Initially, the background gradient size is hidden */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  transition: 0.4s; /* Smooth transition effect for background size */
+}
+
+/* Hover effect for the about item */
+.aboutItem:hover {
+  background-size: 100% 100%; /* Expands the background gradient fully on hover */
+}
+
+/* Styling for the heading (h3) within the about item */
+.aboutItem h3 {
+  font-size: 25px; /* Font size for the heading */
+  font-weight: 600; /* Medium boldness for the heading text */
+}
+
+/* Styling for the paragraph (p) within the about item */
+.aboutItem p {
+  font-size: 25px; /* Font size for the paragraph */
+}
+
+/* Responsive Design - Adjustments for screens smaller than 830px */
+@media screen and (max-width: 830px) {
+  .container {
+    margin-left: 5%; /* Reduced left margin */
+    margin-right: 5%; /* Reduced right margin */
+    padding: 40px; /* Reduced padding */
+    margin-top: 80px; /* Reduced top margin */
+    background-color: rgba(12, 12, 12, 0.4); /* Slightly more transparent background */
+  }
+
+  .title {
+    font-size: 30px; /* Smaller font size for the title */
+  }
+
+  .content {
+    flex-direction: column; /* Switches to a vertical layout */
+    align-items: flex-start; /* Aligns items to the left */
+  }
+
+  .aboutImage {
+    display: none; /* Hides the image on smaller screens */
+  }
+
+  .aboutItems {
+    margin-top: 20px; /* Adds space above the list */
+    gap: 30px; /* Reduces the gap between items */
+  }
+
+  .aboutItem {
+    padding: 15px; /* Reduces padding */
+    font-size: 22px; /* Reduces font size for the list item */
+    border-radius: 10px; /* Smaller rounded corners */
+  }
+
+  .aboutItem h3 {
+    font-size: 22px; /* Reduces the font size for the heading */
+  }
+
+  .aboutItem p {
+    font-size: 20px; /* Reduces the font size for the paragraph */
+  }
+}
+
+/* Responsive Design - Adjustments for screens smaller than 480px (mobile) */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 3%; /* Further reduced left margin */
+    margin-right: 3%; /* Further reduced right margin */
+    padding: 30px; /* Reduced padding */
+    margin-top: 60px; /* Reduced top margin */
+  }
+
+  .title {
+    font-size: 24px; /* Smaller font size for the title on mobile */
+  }
+
+  .content {
+    align-items: center; /* Centers the content */
+  }
+
+  .aboutItems {
+    gap: 20px; /* Reduces gap between items on mobile */
+  }
+
+  .aboutItem h3 {
+    font-size: 20px; /* Smaller font size for the heading on mobile */
+  }
+
+  .aboutItem p {
+    font-size: 18px; /* Smaller font size for the paragraph on mobile */
+  }
+
+  .aboutItem {
+    padding: 12px; /* Reduced padding for mobile */
+  }
+}

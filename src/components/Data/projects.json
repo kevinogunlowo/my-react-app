@@ -1,0 +1,24 @@
+[
+    {
+      "title": "Personal planner app.",
+      "imageSrc": "projects/notesApp.png",
+      "description": "This is a mobile application that stores user notes in a repository.",
+      "skills": ["Flutter", "Dart"],
+      "source": "https://github.com/kevinogunlowo/Todolist-app"
+    },
+    {
+      "title": "E-commerce app",
+      "imageSrc": "projects/ecommerceApp.png",
+      "description": "This is an Ecommerce application used to shop.",
+      "skills": ["Flutter", "Dart"],
+      "source": "https://github.com/kevinogunlowo/Nike-Store"
+    },
+    {
+      "title": "Wallet App",
+      "imageSrc": "projects/walletApp.png",
+      "description": "This is a project made to display users economic identity.",
+      "skills": ["Flutter", "Dart"],
+      "source": "https://github.com/kevinogunlowo/wallet-app-ui"
+    }
+  ]
+  

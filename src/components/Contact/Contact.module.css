@@ -1,0 +1,107 @@
+@import "../../vars.css"; /* Importing global variables from vars.css */
+
+/* Main container styling */
+.container {
+  color: var(--color-text); /* Using a custom text color defined in vars.css */
+  margin-top: 120px; /* Top margin to create space above the container */
+  background-color: var(--color-secondary); /* Applying a background color from vars.css */
+  display: flex; /* Flexbox layout for main container */
+  flex-direction: row; /* Items inside will be aligned horizontally */
+  justify-content: space-evenly; /* Even spacing between child elements */
+  width: 100vw; /* Full viewport width */
+  padding: 58px 10%; /* Padding on all sides, with horizontal padding of 10% */
+  gap: 10px; /* 10px gap between flex items */
+}
+
+/* Text section styling */
+.text h2 {
+  font-size: 80px; /* Large font size for the heading */
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: 4px; /* Spacing between letters */
+}
+
+.text p {
+  font-size: 40px; /* Font size for paragraphs */
+  font-weight: 400; /* Regular font weight */
+  letter-spacing: 2px; /* Spacing between letters for paragraph text */
+}
+
+/* Links container styling */
+.links {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack links vertically */
+  align-items: flex-start; /* Align links to the left */
+  list-style: none; /* Remove default bullet points from list */
+  gap: 26px; /* Spacing between each link */
+}
+
+/* Individual link item styling */
+.link {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertically align icon and link text */
+  gap: 25px; /* Space between the icon and link text */
+}
+
+/* Link anchor tag styling */
+.link a {
+  color: var(--color-text); /* Text color defined in vars.css */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 30px; /* Font size for the link text */
+  font-weight: 400; /* Regular font weight for links */
+  letter-spacing: 1.5px; /* Spacing between letters in the link */
+}
+
+/* Responsive design for screens smaller than 830px */
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    gap: 23px; /* Increase gap between sections */
+    padding: 30px 5%; /* Adjust padding for smaller screens */
+  }
+
+  .text {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack text elements vertically */
+    align-items: center; /* Center-align text on smaller screens */
+  }
+
+  .text h2 {
+    font-size: 50px; /* Smaller font size for the heading on small screens */
+    letter-spacing: 2px; /* Adjust letter spacing for smaller screens */
+  }
+
+  .text p {
+    font-size: 25px; /* Smaller font size for paragraphs on small screens */
+    letter-spacing: 1px; /* Adjust letter spacing for smaller screens */
+    text-align: center; /* Center-align the paragraph text */
+  }
+
+  .links {
+    align-items: center; /* Center-align links on small screens */
+  }
+
+  .link a {
+    font-size: 24px; /* Smaller font size for links on small screens */
+    letter-spacing: 1px; /* Adjust letter spacing for smaller screens */
+  }
+}
+
+/* Extra small screen styling (for screens below 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 80px; /* Adjust top margin for extra small screens */
+    padding: 20px 3%; /* Reduce padding for extra small screens */
+  }
+
+  .text h2 {
+    font-size: 40px; /* Further reduce font size for the heading */
+  }
+
+  .text p {
+    font-size: 20px; /* Further reduce font size for paragraphs */
+  }
+
+  .link a {
+    font-size: 18px; /* Further reduce font size for links */
+  }
+}
