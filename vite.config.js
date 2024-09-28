@@ -6,8 +6,10 @@ export default defineConfig({
   
   plugins: [react()],
 
-  
-  root: 'C:/React class project/test_portfolio/client/my-react-app', // Your project root
+  root: 'React class project',  // Sets the base directory for the Vite server
+  build: {
+    outDir: 'public',  // Output directory for built files
+  },
   base: '/my-react-app',
 });
 
