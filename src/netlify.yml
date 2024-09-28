@@ -1,0 +1,4 @@
+version: 1
+build:
+  publish: dist  # Output directory for Vite
+  command: npm run build  # Command to build your project

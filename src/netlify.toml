@@ -1,0 +1,6 @@
+[build]
+  publish = "dist"  # Output directory for Vite
+  command = "npm run build"  # Command to build your project
+
+[[plugins]]
+  package = "netlify-plugin-vite"  # Example plugin, adjust as needed
