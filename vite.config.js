@@ -10,7 +10,6 @@ export default defineConfig({
   build: {
     outDir: 'public',  // Output directory for built files
   },
-  base: '/my-react-app',
 });
 
   
