@@ -8,7 +8,7 @@ export default defineConfig({
 
   
   root: 'C:/React class project/test_portfolio/client/my-react-app', // Your project root
-  base: '/',
+  base: '/my-react-app',
 });
 
   
